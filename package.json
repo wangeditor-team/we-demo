@@ -27,6 +27,6 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "@wangeditor-team/we-next": "file:../../../.nvm/versions/node/v14.3.0/lib/node_modules/@wangeditor-team/we-next"
+    "@wangeditor-team/we-next": "0.0.9"
   }
 }
