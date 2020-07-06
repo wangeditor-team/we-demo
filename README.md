@@ -8,6 +8,8 @@
 
 `npm i @wangeditor-team/we-next --save` ，确保安装的是**最新**版本
 
+PS：如果安装的不是最新版本，可以手动修改 `package.json` 的版本号，再重新安装。
+
 ### 安装本地 npm 包
 
 进入编辑器源码目录，运行 `npm link` ，会得到一个本地的 npm 包地址，如 `/Users/xxx/.nvm/versions/node/v14.3.0/lib/node_modules/@wangeditor-team/we-next` ，将其拷贝下来。

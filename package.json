@@ -27,6 +27,6 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "@wangeditor-team/we-next": "0.0.9"
+    "@wangeditor-team/we-next": "0.0.11"
   }
 }
