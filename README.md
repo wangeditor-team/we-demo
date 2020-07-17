@@ -23,3 +23,7 @@ PS：如果安装的不是最新版本，可以手动修改 `package.json` 的�
 ## 运行
 
 `npm run dev`
+
+------
+
+`npm install @wangeditor-team/we-next@latest --save`

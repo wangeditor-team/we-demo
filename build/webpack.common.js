@@ -4,23 +4,25 @@
  */
 
 const path = require('path')
-// const webpack = require('webpack')
+const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-const srcPath = path.join(__dirname, 'src')
-const distPath = path.join(__dirname, 'dist')
+const srcPath = path.join(__dirname, '..', 'src')
+const distPath = path.join(__dirname, '..', 'dist')
+
+// 获取 @wangeditor-team/we-next 的版本号
+const packageJSON = require('../package.json')
+const v = packageJSON.dependencies['@wangeditor-team/we-next']
 
 module.exports = {
-    mode: 'development',
     entry: path.join(srcPath, 'index.js'),
-    output: {
-        filename: 'main.js',
-        path: distPath
-    },
     plugins: [
         new HtmlWebpackPlugin({
             template: path.join(srcPath, 'index.html'),
             filename: 'index.html'
+        }),
+        new webpack.DefinePlugin({
+            VERSION: JSON.stringify(v)
         })
     ],
     module: {
@@ -32,12 +34,5 @@ module.exports = {
                 exclude: /node_modules/
             },
         ]
-    },
-    devServer: {
-        port: 3001,
-        progress: true,
-        contentBase: distPath,
-        open: true,
-        compress: true
     }
 }
