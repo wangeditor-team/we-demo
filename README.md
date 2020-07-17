@@ -1,4 +1,4 @@
-# wangEditor next demo
+# we-next demo
 
 用于安装 npm 包，功能测试
 
@@ -6,9 +6,9 @@
 
 ### 安装线上 npm 包
 
-`npm i @wangeditor-team/we-next --save` ，确保安装的是**最新**版本
+`npm install @wangeditor-team/we-next@latest --save`
 
-PS：如果安装的不是最新版本，可以手动修改 `package.json` 的版本号，再重新安装。
+对比 https://www.npmjs.com/package/@wangeditor-team/we-next 的版本，确保安装的是**最新**版本。
 
 ### 安装本地 npm 包
 
@@ -22,8 +22,13 @@ PS：如果安装的不是最新版本，可以手动修改 `package.json` 的�
 
 ## 运行
 
-`npm run dev`
+- 启动本地服务 `npm run dev`
+- 打包 `npm run prod`
 
-------
+-------
 
-`npm install @wangeditor-team/we-next@latest --save`
+## 用于 we-next 的 github actions
+
+代码见 https://github.com/wangeditor-team/we-next/blob/master/.github/workflows/npm-publish.yml
+
+we-next 发布到 npm 之后，会自动下载该项目，安装最新版插件，打包并发布到服务器。
