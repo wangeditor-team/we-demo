@@ -1,4 +1,4 @@
-import E from '@wangeditor-team/we-next'
+import E from 'wangeditor'
 
 const editor = new E('#container')
 

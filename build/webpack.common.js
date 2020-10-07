@@ -10,9 +10,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const srcPath = path.join(__dirname, '..', 'src')
 const distPath = path.join(__dirname, '..', 'dist')
 
-// 获取 @wangeditor-team/we-next 的版本号
+// 获取 wangeditor 的版本号
 const packageJSON = require('../package.json')
-const v = packageJSON.dependencies['@wangeditor-team/we-next']
+const v = packageJSON.dependencies['wangeditor']
 
 module.exports = {
     entry: path.join(srcPath, 'index.js'),

@@ -6,13 +6,13 @@
 
 ### 安装线上 npm 包
 
-`npm install @wangeditor-team/we-next@latest --save`
+`npm install wangeditor@latest --save`
 
-对比 https://www.npmjs.com/package/@wangeditor-team/we-next 的版本，确保安装的是**最新**版本。
+对比 https://www.npmjs.com/package/wangeditor 的版本，确保安装的是**最新**版本。
 
 ### 安装本地 npm 包
 
-进入编辑器源码目录，运行 `npm link` ，会得到一个本地的 npm 包地址，如 `/Users/xxx/.nvm/versions/node/v14.3.0/lib/node_modules/@wangeditor-team/we-next` ，将其拷贝下来。
+进入编辑器源码目录，运行 `npm link` ，会得到一个本地的 npm 包地址，如 `/Users/xxx/.nvm/versions/node/v14.3.0/lib/node_modules/wangeditor` ，将其拷贝下来。
 
 进入该项目目录，运行 `npm install <刚才拷贝的地址>` ，即可安装完成
 

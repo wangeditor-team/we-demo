@@ -30,6 +30,6 @@
     "webpack-merge": "^5.0.9"
   },
   "dependencies": {
-    "@wangeditor-team/we-next": "0.0.14"
+    "wangeditor": "^4.0.0"
   }
 }
