@@ -14,7 +14,10 @@
 
 进入编辑器源码目录，运行 `npm link` ，会得到一个本地的 npm 包地址，如 `/Users/xxx/.nvm/versions/node/v14.3.0/lib/node_modules/wangeditor` ，将其拷贝下来。
 
-进入该项目目录，运行 `npm install <刚才拷贝的地址>` ，即可安装完成
+进入该项目目录
+- 删除 `rm -rf node_modules/wangeditor`
+- 删除 `package.json` 中的 `wangeditor`
+- 运行 `npm install <刚才拷贝的地址>` ，即可安装完成
 
 ## 修改代码
 
